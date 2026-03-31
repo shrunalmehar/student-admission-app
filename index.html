@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbiosis Admission</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Symbiosis Admission</h2>
+        <p>New Student Registration — 2025–26</p>
+
+        <form id="admissionForm">
+
+            <!-- Name -->
+            <div class="inputBox">
+                <input type="text" id="name" required>
+                <span>Full Name *</span>
+            </div>
+
+            <!-- Email -->
+            <div class="inputBox">
+                <input type="email" id="email" required>
+                <span>Email ID *</span>
+            </div>
+
+            <!-- Phone -->
+            <div class="inputBox">
+                <input type="tel" id="phone" pattern="[0-9]{10}" required>
+                <span>Phone Number *</span>
+            </div>
+
+            <!-- Password -->
+            <div class="inputBox">
+                <input type="password" id="password" required>
+                <span>Password *</span>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="inputBox">
+                <input type="password" id="confirmPassword" required>
+                <span>Confirm Password *</span>
+            </div>
+
+            <!-- Gender -->
+            <div class="group">
+                <label>Gender *</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender" required> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Other</label>
+                </div>
+            </div>
+
+            <!-- Course -->
+            <div class="group">
+                <label>Course *</label>
+                <select required>
+                    <option value="">Select Programme</option>
+                    <option>B.Tech</option>
+                    <option>BBA</option>
+                    <option>BCA</option>
+                </select>
+            </div>
+
+            <!-- DOB -->
+            <div class="group">
+                <label>Date of Birth *</label>
+                <input type="date" required>
+            </div>
+
+            <!-- Address -->
+            <div class="group">
+                <label>Address *</label>
+                <textarea rows="2" required></textarea>
+            </div>
+
+            <!-- Terms -->
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">
+                    I agree to Terms & Conditions and Privacy Policy
+                </label>
+            </div>
+
+            <!-- Button -->
+            <button type="submit">Submit Registration</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

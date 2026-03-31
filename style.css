@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c3a, #3b2f6f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: white;
+}
+
+/* Heading */
+.card h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+/* Input floating */
+.inputBox {
+    position: relative;
+    margin: 18px 0;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    transition: 0.3s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+    top: -10px;
+    font-size: 10px;
+    color: #ff4ecd;
+}
+
+/* Groups */
+.group {
+    margin: 12px 0;
+}
+
+.group label {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Gender */
+.gender {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* Select & textarea */
+select, textarea, input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+}
+
+/* Terms */
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    margin: 15px 0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, #7f5af0, #ff4ecd);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
